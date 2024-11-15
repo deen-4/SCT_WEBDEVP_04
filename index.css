@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+}
+
+.todo-app {
+  width: 400px;
+  background: linear-gradient(135deg, #6a82fb, #e9e62b);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #fff;
+}
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="datetime-local"] {
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  background-color: #fff;
+  color: #333;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="datetime-local"]:focus {
+  border-color: #6a82fb;
+  outline: none;
+  box-shadow: 0 0 5px rgba(106, 130, 251, 0.6);
+}
+
+button {
+  padding: 12px 18px;
+  background-color: #fcc45c;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #bdf596; 
+}
+
+button:active {
+  transform: scale(0.98); 
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 30px;
+}
+
+.task-item {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+.task-item:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.task-title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #fff;
+  flex: 1;
+}
+
+.task-date {
+  font-size: 0.9rem;
+  color: #b0b0b0;
+}
+
+.task-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.task-actions button {
+  background-color: #6a82fb;
+  color: white;
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.task-actions button:hover {
+  background-color: #5a74e6; 
+}
+
+.task-actions button:active {
+  transform: scale(0.95); 
+}
+
+.task-actions button.delete {
+  background-color: #ff4c4c; 
+}
+
+.task-actions button.delete:hover {
+  background-color: #ff6a6a;
+}
+
+.completed .task-title {
+  text-decoration: line-through;
+  color: #00d284; 
+}
+
+.todo-status-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.todo-status-container button {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 10px 18px;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.todo-status-container button:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+.todo-status-container button:active {
+  transform: scale(0.95); 
+}
